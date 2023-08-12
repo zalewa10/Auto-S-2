@@ -15,10 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     
-    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    
 </head>
 
 <body>
@@ -246,7 +246,9 @@
             </div>
             <div class="youtube">
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/NI-zikl2jQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p class="yt">Nasza autorska ścieżka zadań</p> -->
+                -->
+                <video src="video/sciezka.webm" autoplay muted controls loop></video>
+                <p class="yt">Nasza autorska ścieżka zadań</p> 
             </div>
         </div>
     </div>
@@ -286,10 +288,11 @@
             <p class="copy">© Copyright - Ośrodek Szkolenia Kierowców Auto-s.pl</p>
             <p class="copy">Design i wykonanie: <a href="https://www.kzalewski.com">Krzysztof Zalewski</a></p>
         </div>
-        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
         
 </body>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var vid = document.querySelector("#vid");

@@ -589,7 +589,7 @@ iframe{
 
 @media screen and (min-width:1024px) {
     iframe{
-    min-height: 400px;
+    min-height: 300px;
 }
 .youtube {
         margin: 0;

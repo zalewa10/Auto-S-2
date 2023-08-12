@@ -1,0 +1,1190 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+select:invalid {
+    color: grey;
+}
+
+select {
+    color: black;
+}
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: #001a2e;
+}
+
+.alert {
+    background-color: #e15638;
+    color: white;
+    border-bottom: 1px solid rgba(201, 199, 199, 0.695);
+    /* background-color: white; */
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    z-index: 100 !important;
+}
+
+
+
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    margin-left: 15px;
+    margin-top: 5%;
+}
+
+.hamburger {
+    z-index: 1;
+    margin-right: 15px;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+
+b {
+    font-weight: 800;
+}
+
+h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 2.4em;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 240px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #e15638;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+svg {
+    color: white;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #1e1e1e;
+justify-content: center;
+}
+
+.left {
+    padding: 0px 30px;
+    background: center/cover url("ikonki/kia5.jpg");
+}
+
+.zapisz {
+    display: flex;
+    color: white;
+    background-color: #e15638;
+    margin: 2rem auto;
+    font-weight: 800;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 5rem;
+}
+
+.guziki-obszar {
+    color: black;
+    background-color: white;
+    margin-top: 2rem;
+    font-weight: 800;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    margin-bottom: 20px;
+}
+
+.top {
+    margin-bottom: 100px;
+}
+
+
+
+.auto-s {
+    display: none;
+}
+
+
+
+
+.wyroznia {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.naglowek {
+    color: white;
+    margin: 50px 0 20px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.ikonka {
+    width: 40px;
+    margin-top: 40px;
+}
+
+.fiszki {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.fiszka2 {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 10px;
+    text-align: center;
+}
+
+.tytul {
+    font-weight: 700;
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: white;
+}
+
+.opis {
+    font-weight: 200;
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: white;
+}
+
+
+
+
+h1.naglowek2 {
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.h2 {
+    margin: 0 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.o-nas {
+    padding: 0 20px;
+}
+
+.headnas {
+    margin-left: 20px;
+    font-size: 2em;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tick {
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+
+.grafik {
+    background-color: #1e1e1e;
+    padding: 20px 30px 30px 30px;
+}
+
+
+.opis2 {
+    color: white;
+    margin-top: 30px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lista p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.plus {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+#sciezka {
+    padding: 10px 20px 5px 20px;
+}
+
+.yt {
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+
+
+.tło {
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+
+
+.footer {
+    background-color: #1e1e1e;
+}
+
+.sekcja {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-sek {
+    color: white;
+    font-weight: 500;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.opis-sek {
+    color: #909090;
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.copyright {
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.copy {
+    margin-bottom: 10px;
+}
+
+.nawi-sek {
+    padding: 20px 0;
+}
+
+#map {
+    width: 600px;
+    height: 300px;
+    z-index: 1;
+}
+
+
+.grafmap {
+    background-color: whitesmoke;
+    padding: 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grafmap-kadra {
+    background-color: whitesmoke;
+    padding: 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    background-color: white;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+
+
+.content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    max-height: 300px;
+    border-radius: 15px;
+}
+
+
+.text {
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tytul-card {
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.podtytul-card {
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.opis-card {
+    font-weight: 400;
+    color: #909090;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+form {
+    padding: 0px 40px;
+    background-color: whitesmoke;
+}
+
+.tytul-galeria {
+    margin-top: 60px;
+}
+
+.cenniki {
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.pasek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail {
+    color: #dd3131;
+    text-decoration: underline;
+}
+
+.lewo-kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.podpis {
+    margin: 40px 0 0 0;
+    font-size: 1em;
+}
+
+.uwaga {
+    background-color: #e15638;
+}
+
+.podpis-white {
+    color: white;
+    margin: 40px 0 0 0;
+    font-size: 1em;
+}
+
+.nagłówek-white {
+    color: white;
+}
+
+.podpis2 {
+    font-size: 1em;
+}
+
+.tlo {
+    background-color: whitesmoke;
+}
+
+.textt {
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.instruktorzy {
+    justify-content: flex-start;
+}
+
+.platnosc {
+    background-color: #1e1e1e;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.biel {
+    color: rgb(204, 204, 204);
+}
+
+.biel:nth-child(1) {
+    color: white;
+}
+
+.praca {
+    text-align: center;
+    font-weight: 400;
+    color: #dd3131;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.imie {
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.wlasciciel {
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    font-size: 1.5em;
+}
+
+.fb {
+    color: white;
+    font-weight: 400;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+#vid{display: none;}
+#vid2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: inherit;
+    height: 100%;
+    width: 100%;
+    padding: 30px 10px 0 10px;}
+.fb a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb2 {
+    height: 30px;
+    margin: 0 10px;
+}
+
+video {
+    padding: 30px 30px 0 30px;
+    
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.youtube {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 5px 0;
+}
+
+.prawo{
+    min-height: 250px;
+    width: 90%;
+    padding: 30px 20px 0 20px;
+}
+
+
+
+@media screen and (min-width:1024px) {
+#vid{
+    display: initial;
+}
+#vid2{display: none;}
+.youtube {
+        margin: 0;
+        align-items: flex-end;
+        padding-top: 20px;
+        width: 50%;
+    }
+
+    video {
+        padding: 0;
+    }
+
+.youtube {
+display:flex;
+        margin: 0;
+        align-items: flex-end;
+        padding-top: 20px;
+        width: 50%;
+    }
+
+    video {
+        padding: 0;
+    }
+
+    .alert {
+        border-bottom: none;
+        position: relative;
+        background-color: #e15638;
+        color: white;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        padding-top: 5px;
+        font-size: 1.5rem;
+        z-index: 5;
+        max-width: 2560px;
+    }
+
+    html {
+        max-width: 2560px;
+        margin: auto;
+    }
+
+
+    nav {
+        background-color: white;
+        padding: 0 40px;
+        margin-top: 0;
+    }
+
+    .zapisz {
+        margin: 0;
+        padding: 0;
+        background-color: #e15638;
+        color: white;
+        font-size: 1.2em;
+        padding: 0.7rem 2rem;
+        margin: 40px 0;
+
+    }
+
+    .zapisz:hover {
+        background-color: #dd3131;
+        transition: 0.5s;
+    }
+
+    .hero {
+        background-color: whitesmoke;
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        filter: none;
+    }
+
+    h1 {
+        color: #1e1e1e;
+        font-size: 4rem;
+        font-weight: 900;
+        text-align: left;
+    }
+
+    h2 {
+        color: #1e1e1e;
+        font-size: 3.3rem;
+        font-weight: 900;
+        text-align: left;
+    }
+
+    h4 {
+        color: #1e1e1e;
+        width: 85%;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-align: left;
+        margin: 40px 0;
+    }
+
+    .left {
+        display: flex;
+    padding: 0;
+    background: none;
+    width: 60%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+
+    .prawo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        padding: 100px 0;
+    }
+
+    .auto-s {
+        display: inline;
+
+    }
+
+
+    .grafik {
+        padding: 40px;
+        background-color: whitesmoke;
+    }
+
+    .zdj-opis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tło {
+        max-height: 250px;
+        margin-top: 0;
+    }
+
+
+
+    h1.naglowek2 {
+        font-size: 2.5em;
+        margin-bottom: 80px;
+    }
+
+    .opis2 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 60px;
+        width: 50%;
+        font-size: 1.3em;
+        color: black;
+    }
+
+    .active {
+        font-weight: 900;
+
+    }
+
+
+    .block {
+        font-size: 1.2em;
+        background-color: white;
+    }
+
+    .góra {
+        margin-left: 20px;
+        padding-left: 0;
+    }
+
+    .trala {
+        background-color: white;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
+    }
+
+    .navbar {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .eclipse {
+        display: none;
+    }
+
+    .wyroznia {
+        background-color: #1e1e1e;
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .naglowek {
+        color: white;
+        font-size: 2.5rem;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    .fiszki {
+        margin: 0;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+    .fiszka2 {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 300px;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ikonka {
+        width: 45px;
+        margin: 0;
+        margin-bottom: 30px;
+        vertical-align: top;
+    }
+
+    .tytul {
+        color: white;
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .opis {
+        color: rgb(204, 204, 204);
+        font-weight: 400;
+        text-align: center;
+        font-size: 1.2em;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .koszyk {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0 20px;
+    }
+
+
+    
+
+    .lista {
+        width: 50%;
+    }
+
+    .yt {
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: right;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    
+    .slider-menu {
+        display: flex;
+        margin: 0;
+        top: 0;
+        right: 0;
+        padding: 0;
+    }
+
+    .nawi-sek {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 10px 40px;
+    }
+
+
+
+    .o-nas {
+        padding: 40px;
+        background-color: whitesmoke;
+    }
+
+    .koszyk {
+        padding-bottom: 40px;
+    }
+
+    .head-sek {
+        font-size: 1.3rem;
+
+    }
+
+    .headnas {
+        margin: 0;
+        font-size: 2.8em;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .tick {
+        width: 35px;
+    }
+
+    .plus p {
+        font-size: 1.2rem;
+    }
+
+    .opis-sek {
+        font-size: 1rem;
+    }
+
+    .copyright {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+
+    .copy {
+        font-size: 1em;
+    }
+
+
+    .obszar-dzialalnosci {
+        display: none;
+    }
+
+    .obszar-dzialalnosci-desktop {
+        padding: 40px;
+        background-color: #1e1e1e;
+    }
+
+    /* .podzial {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        background-color: #e15638;
+        border-radius: 20px;
+    } */
+
+    .grafik-naglowek {
+        color: black;
+        font-weight: 900;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 80px;
+    }
+
+    .miejsca p {
+        color: white;
+        font-size: 1.3em;
+    }
+
+    /* .lewa-strona {
+        width: 40%;
+    }
+
+    .prawa-strona {
+        width: 60%;
+    } */
+
+    .naglowek3 {
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .miejsca-naglowek {
+        color: white;
+        font-weight: 500;
+        font-size: 1.4em;
+        margin-bottom: 30px;
+    }
+
+    .miejsca p {
+        margin-bottom: 15px;
+        font-size: 1.4em;
+    }
+
+    .obszar-naglowek {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+
+
+    .grafmap {
+        background-color: white;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grafmap-kadra {
+        background-color: whitesmoke;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90%;
+        background-color: white;
+        margin-bottom: 70px;
+        min-height: 390px;
+        justify-content: space-between;
+    }
+
+
+    .content {
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content img {
+        max-height: 350px;
+    }
+
+
+    .text {
+        padding: 20px 30px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .instruktorzy {
+        padding: 20px 30px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tytul-card {
+        font-weight: 700;
+        color: black;
+        font-size: 2.5rem;
+    }
+
+    .opis-card {
+        font-weight: 400;
+        color: #909090;
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+
+    #map {
+        width: 600px;
+        height: 400px;
+        z-index: 1;
+    }
+
+    .cenniki {
+        background-color: whitesmoke;
+    }
+
+    .galeria {
+        background-color: whitesmoke;
+        padding: 20px 40px;
+    }
+
+    .naglowki {
+        margin-top: 20px;
+        background-color: whitesmoke;
+    }
+
+    button {
+        transition: 0.3s;
+    }
+
+    .środek {
+        text-align: center;
+    }
+
+
+    .zamiana {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .shadoww {
+        margin: 0 10px;
+    }
+
+    form {
+        padding: 0 80px;
+    }
+
+    .kontakt {
+        display: flex;
+    }
+
+    .lewo-kontakt {
+        width: 50%;
+    }
+
+    .prawo-kontakt {
+        width: 50%;
+    }
+
+    .tytul-kontakt {
+        font-size: 2em;
+        width: 100%;
+    }
+
+    .podpis {
+        font-size: 1.4em;
+        margin-top: 50px;
+    }
+
+
+    .podpis-white {
+        font-size: 1.4em;
+    }
+
+    .szerzej {
+        width: 80%;
+        padding: 60px 0 10px 0;
+    }
+
+    .podpis2 {
+        font-size: 1.4em;
+    }
+
+    .linia {
+        margin: 20px 0;
+        border: 1px solid #ffffff62;
+    }
+
+    .praca {
+        font-size: 1.5em;
+    }
+
+    .imie {
+        font-size: 1.8em;
+    }
+
+    .wlasciciel {
+        font-size: 1.8em;
+    }
+}

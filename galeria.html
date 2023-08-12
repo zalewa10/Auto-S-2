@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="icon" href="ikonki/logo_l.jpg" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Messenger Wtyczka czatu Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Wtyczka czatu code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "1839029859680743");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v17.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="alert">
+        <p>Najbliższy kurs - <b>11 września 2023r.</b></p>
+    </div>
+
+
+    <nav class="border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 góra">
+            <a href="index.html" class="flex items-center">
+                <img src="ikonki/logo-mobile.svg" class="h-9 mr-2 ml-1 mobile" alt="Auto-S Logo" />
+                <img src="ikonki/logo.svg" class="h-9 mr-2 ml-1 desktop" alt="Auto-S Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden  focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 hamburger"
+                aria-controls="navbar-default" aria-expanded="false">
+
+                <svg class="w-9 h-9 mt-3" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700 trala">
+
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                            aria-current="page">Strona Główna</a>
+                    </li>
+                    <li>
+                        <a href="cennik.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Cennik</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html"
+                            class="block py-2 pl-3 pr-4 text-black-700 bg-gray-300 rounded lg:bg-transparent lg:text-red-700 lg:p-0 dark:text-white lg:dark:text-blue-500 active">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="kadra.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Kadra</a>
+                    </li>
+                    <li>
+                        <a href="voucher.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Voucher</a>
+                    </li>
+                    <li>
+                        <a href="zapisy.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Zapisy</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="progress">
+        <span id="progress-value"><img src="ikonki/top.png"></span>
+    </div>
+    <div class="tlo">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto text-center mb-8 lg:mb-12">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white środek">Zobacz jak
+                    działamy
+                </h2>
+            </div>
+
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/test1.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/5.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/3.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/4.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="galeria/nowe.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/1.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6"
+                        data-carousel-slide-to="5"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Poprzednie</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Następne</span>
+                    </span>
+                </button>
+            </div>
+            <div class="mx-auto text-center mb-8 lg:mb-12 szerzej">
+                <h2
+                    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
+                    Sala
+                    wykładowa
+                </h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl podpis2"> Posiadamy własną, klimatyzowaną i
+                    odpowiednio
+                    wyposażoną salę wykładową w Skórzewie.
+                    Prowadzimy zajęcia teoretyczne dla pojedynczych osób oraz zorganizowanych grup.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/69.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/sala1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/sala2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/sala3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="mx-auto text-center mb-8 lg:mb-12 szerzej">
+                <h2
+                    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
+                    Plac
+                    manewrowy
+                </h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl podpis2"> Dysponujemy własnym, profesjonalnie
+                    urządzonym,
+                    wyposażonym i oświetlonym placem manewrowym w Skórzewie.
+
+                    Obiekt został przygotowany na wzór placu jaki znajduje się w Wojewódzkim Ośrodku Ruchu
+                    Drogowego-Poznań.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/53.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/48.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/61.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/62.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="mx-auto text-center mb-8 lg:mb-12 szerzej">
+                <h2
+                    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
+                    Pojazdy szkoleniowe
+                </h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl podpis2">Kia Rio 4 oraz Hyuandai i20 (wersje
+                    egzaminacyjne)
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/profilowe 1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="galeria/1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="nawi-sek">
+            <div class="sekcja">
+                <p class="head-sek">SZKOŁA NAUKI JAZDY</p>
+                <p class="opis-sek">Ośrodek Szkolenia Kierowców AUTO-S</p>
+                <p class="opis-sek">ul.Jesienna 18</p>
+                <p class="opis-sek">60-185, Skórzewo</p>
+                <p class="opis-sek">Właściciel: Sławomir Pługowski</p>
+            </div>
+
+            <div class="sekcja">
+                <p class="head-sek">INFORMACJE DO PŁATNOŚCI</p>
+                <p class="opis-sek">Numer konta:</p>
+                <p class="opis-sek">05 1240 6540 1111 0011 2212 8760</p>
+                <p class="opis-sek">Blik: tel. 509 211 676</p>
+                <p class="opis-sek">Tytuł przelewu: imię, nazwisko, wybrany kurs</p>
+            </div>
+
+            <div class="sekcja">
+                <p class="head-sek">BIURO</p>
+                <p class="opis-sek">Kontakt telefoniczny:</p>
+                <p class="opis-sek">pon-pt 8:00 - 16:00</p>
+                <p class="opis-sek">tel. 668 987 001</p>
+                <p class="opis-sek">mail: kontakt@auto-s.pl</p>
+            </div>
+
+
+        </div>
+        <div class="copyright">
+            <p class="fb"><a href="https://www.facebook.com/SlawekPlugowski/">Sprawdź nas na
+                    <img src="ikonki/facebook.png" alt="" class="fb2"></a></p>
+            <p class="copy">© Copyright - Ośrodek Szkolenia Kierowców Auto-s.pl</p>
+            <p class="copy">Design i wykonanie: <a href="https://www.kzalewski.com">Krzysztof Zalewski</a></p>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+<script src="do-gory.js"></script>
+
+</html>
